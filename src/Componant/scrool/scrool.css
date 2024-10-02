@@ -1,0 +1,19 @@
+.icon-arrow-up-circle{ 
+    background-color: orange;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2rem;
+    right: 3%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    opacity: 0.5;
+} 
+
+.icon-arrow-up-circle:hover {
+    transition: 0.3s;
+    background-color: rgb(147, 101, 17);
+}
+

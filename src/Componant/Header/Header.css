@@ -1,0 +1,122 @@
+
+header {
+    justify-content: space-between;
+    padding: 0 2.4em;
+    margin-top: 1.2em;
+
+}
+
+header nav {
+    background-color: var(--bacgrundHeader);
+    padding: 0.77em 1.6em;
+    border-radius: 55px;
+    box-shadow: 2px 2px 20px var(--shado);
+}
+
+header ul {
+    gap: 16px;
+}
+
+header ul  li a {
+    color: var(--title);
+    opacity: 0.9;
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+
+header ul  li a:hover {
+    opacity: 1;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
+    letter-spacing: 1px;
+}
+
+header button {
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+
+header .icon-bars {
+    display: none;
+}
+
+
+
+header .fixed {
+    /* border: 2px solid red; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(40, 40, 48, 0.91);
+    z-index: 999;
+    backdrop-filter: blur(4px);
+}
+
+
+header .model {
+    animation: mymove 0.7s 1;
+    background-color: var(--socandry);
+    width: 75%;
+    margin: auto;
+    margin-top: 2em;
+    border-radius: 20px;
+    padding: 1em 2em;
+}
+
+header .model li {
+    border-bottom: 2px solid #3734349a;
+    padding-bottom: 0.77rem;
+    padding-top: 0.5rem;
+}
+
+header .model li:last-child {
+    border: none;
+}
+
+header .model li:first-child {
+    text-align: right;
+} 
+
+header .icon-bars , header .icon-moon-o , header .icon-sun {
+    background-color: var(--bacgrundHeader);
+    padding: 0.8em  0.8em;
+    border-radius: 50%;
+    box-shadow: 2px 2px 20px var(--shado);
+    border: 1px solid rgba(229, 173, 94, 0.2);
+    transition: 0.2s;
+} 
+
+header .icon-bars:hover , header .icon-moon-o:hover {
+    border: 1px solid rgba(229, 173, 94, 0.89);
+}
+header .icon-close {
+    font-size: 1.3rem;
+    transition: 0.2s;
+}
+
+header .icon-close:hover {
+    font-size: 1.5rem;
+    rotate: -180deg;
+    color: var(--orang);
+
+}
+
+
+@keyframes mymove {
+    0%   {scale: 0;}
+    60%   {scale: 1.2;}
+    100% {scale: 1;}
+} 
+
+@media (max-width: 700px) {
+    header nav {
+        display: none;
+    }
+
+    header .icon-bars {
+        display: block;
+    }
+}

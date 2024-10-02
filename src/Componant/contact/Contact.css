@@ -1,0 +1,79 @@
+
+
+
+.contact .icon-envelope {
+    color: gray;
+    margin-right: 15px;
+    font-size: 1.8rem;
+}
+
+.contact  .title {
+    color: var(--subtitle);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.contact p {
+    color: gray;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.contact label{
+    color: gray;
+}
+
+.contact #email , .contact #message {
+    all: unset;
+    background-color: rgb(63, 63, 70 ,0.15);
+    border: 1px solid rgb(63 63 70 );
+    width: 16rem;
+    margin-top: 14px;
+    margin-left: 15px;
+    border-radius: 5px;
+    padding: 6px 15px;
+    color: var(--primary);
+} 
+
+
+
+.contact #message {
+    margin-left: 20px;
+    min-height: 9rem;
+    resize: both;
+    color: var(--subtitle);
+}
+
+.contact #email:focus , .contact #message:focus {
+    border: 1px solid rgb(45 212 191 );
+}
+.contact .submet{
+    text-align: center;
+    background-color: var(--bacgrundHeader);
+    border-radius: 5px;
+    padding: 0.7rem 1rem;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .animatiomclass {
+        display: none;
+    }
+    .contact form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact .flex {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .contact .submet {
+        align-self: center;
+        width: 80px;
+    }
+}
